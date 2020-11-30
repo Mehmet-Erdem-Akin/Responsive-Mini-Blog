@@ -1,0 +1,250 @@
+$color1: #161D23;
+$color2: #008EA1;
+$white: #fff;
+$black: #000;
+$gray: #ccc;
+
+/* ************************************************ */
+
+$yazi1: 'Rajdhani',
+sans-serif;
+$yazi2: 'Sansita Swashed',
+cursive;
+$yazi3: 'Tajawal',
+sans-serif;
+
+/* ************************************************ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    #intro {
+        h1 {
+            font-size: 3em !important;
+        }
+    }
+}
+
+main {
+    height: auto;
+    width: 100vw;
+    #sidebar {
+        height: 100%;
+        position: fixed;
+        width: 0px;
+        z-index: 98;
+        top: 0;
+        right: 0px;
+        background-color: #161D23;
+        padding-left: -150px !important;
+        overflow: hidden;
+        transition: 1s;
+        -webkit-box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0.75);
+        .logo {
+            background-color: $color2;
+            a {
+                text-decoration: none;
+                span {
+                    font-size: 40px !important;
+                    color: $white;
+                    font-weight: bold;
+                }
+            }
+        }
+        .btn {
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 30px;
+            color: $gray !important;
+        }
+        ul {
+            height: auto;
+            list-style-type: none;
+            padding: 10px 10px 10px 20px;
+            color: $white;
+            text-decoration: none;
+            font-size: 22px;
+            display: block;
+            margin-top: 50%;
+            li {
+                padding-top: 30px;
+                a {
+                    text-decoration: none;
+                    color: $gray;
+                    &:hover {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+    #content {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        background-color: $white;
+        transition: 0.6s;
+        .menuAc {
+            position: relative;
+            top: 10px;
+            left: 20px;
+            i {
+                z-index: 99;
+                background-color: $color1;
+                border: 2px solid #161D23;
+                border-radius: 5px;
+                padding: 5px;
+                font-size: 20px !important;
+                background-attachment: fixed !important;
+                position: fixed;
+                cursor: pointer;
+                color: $white;
+            }
+        }
+        .form-inline {
+            .btn {
+                color: $color1;
+                border: 2px solid $color1;
+                background-color: $white;
+                &:hover {
+                    background-color: $color1;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+#intro {
+    position: relative;
+    z-index: 3;
+    height: 100vh;
+    background-size: cover;
+    background-image: url('../img/2.jpg') !important;
+    background-attachment: fixed;
+    border-bottom: 4vh solid $color2;
+    animation: 10s move1 infinite;
+    @keyframes move1 {
+        0% {
+            border-bottom: 4vh solid $color1;
+        }
+        25% {
+            border-bottom: 4vh solid $color2;
+        }
+        50% {
+            border-bottom: 4vh solid $color1;
+        }
+        75% {
+            border-bottom: 4vh solid $color2;
+        }
+        100% {
+            border-bottom: 4vh solid $color1;
+        }
+    }
+    h1 {
+        font-size: 5em;
+        color: $color1;
+        font-family: $yazi2;
+    }
+    p {
+        font-size: 20px;
+        color: $color1;
+    }
+    .btn {
+        background-color: $color2;
+        color: $white;
+        &:hover {
+            background-color: $color1;
+        }
+    }
+    hr {
+        border: 2px solid $color1;
+    }
+}
+
+#about-me {
+    font-family: $yazi3;
+    .row:nth-child(1) {
+        h2 {
+            text-align: center;
+            font-family: $yazi2;
+        }
+        p {
+            text-align: center;
+        }
+    }
+}
+
+#my-services {
+    font-family: $yazi2;
+    .project,
+    .coffee,
+    .customer {
+        font-size: 3em !important;
+        animation: anim 10s infinite;
+    }
+    @keyframes anim {
+        0% {
+            color: $white;
+        }
+        100% {
+            color: $black;
+        }
+    }
+}
+
+#band {
+    height: auto;
+    background-color: $color2;
+    animation: move2 10s infinite;
+    @keyframes move2 {
+        0% {
+            background-color: $color1;
+        }
+        25% {
+            background-color: $color2;
+        }
+        50% {
+            background-color: $color1;
+        }
+        75% {
+            background-color: $color2;
+        }
+        100% {
+            background-color: $color1;
+        }
+    }
+    .box {
+        height: 300px;
+        width: auto;
+        background-color: $white;
+        margin: 5px 5px 5px 5px;
+    }
+}
+
+#contact {
+    .box:nth-child(2) {
+        background-size: cover;
+        height: auto;
+        background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.3) 0%, rgba(28, 39, 51, 0.3) 100%), url('https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=334&q=80');
+    }
+    form {
+        h2 {
+            font-family: $yazi2;
+        }
+    }
+}
+
+#copyright {
+    background-color: $color1;
+    a {
+        margin-left: 10px;
+    }
+}

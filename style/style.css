@@ -1,0 +1,175 @@
+/* ************************************************ */
+/* ************************************************ */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+@media (max-width: 768px) {
+  #intro h1 {
+    font-size: 3em !important; } }
+main {
+  height: auto;
+  width: 100vw; }
+  main #sidebar {
+    height: 100%;
+    position: fixed;
+    width: 0px;
+    z-index: 98;
+    top: 0;
+    right: 0px;
+    background-color: #161D23;
+    padding-left: -150px !important;
+    overflow: hidden;
+    transition: 1s;
+    -webkit-box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0.75); }
+    main #sidebar .logo {
+      background-color: #008EA1; }
+      main #sidebar .logo a {
+        text-decoration: none; }
+        main #sidebar .logo a span {
+          font-size: 40px !important;
+          color: #fff;
+          font-weight: bold; }
+    main #sidebar .btn {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 30px;
+      color: #ccc !important; }
+    main #sidebar ul {
+      height: auto;
+      list-style-type: none;
+      padding: 10px 10px 10px 20px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 22px;
+      display: block;
+      margin-top: 50%; }
+      main #sidebar ul li {
+        padding-top: 30px; }
+        main #sidebar ul li a {
+          text-decoration: none;
+          color: #ccc; }
+          main #sidebar ul li a:hover {
+            color: #fff; }
+  main #content {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    transition: 0.6s; }
+    main #content .menuAc {
+      position: relative;
+      top: 10px;
+      left: 20px; }
+      main #content .menuAc i {
+        z-index: 99;
+        background-color: #161D23;
+        border: 2px solid #161D23;
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 20px !important;
+        background-attachment: fixed !important;
+        position: fixed;
+        cursor: pointer;
+        color: #fff; }
+    main #content .form-inline .btn {
+      color: #161D23;
+      border: 2px solid #161D23;
+      background-color: #fff; }
+      main #content .form-inline .btn:hover {
+        background-color: #161D23;
+        color: white; }
+
+#intro {
+  position: relative;
+  z-index: 3;
+  height: 100vh;
+  background-size: cover;
+  background-image: url("../img/2.jpg") !important;
+  background-attachment: fixed;
+  border-bottom: 4vh solid #008EA1;
+  animation: 10s move1 infinite; }
+@keyframes move1 {
+  0% {
+    border-bottom: 4vh solid #161D23; }
+  25% {
+    border-bottom: 4vh solid #008EA1; }
+  50% {
+    border-bottom: 4vh solid #161D23; }
+  75% {
+    border-bottom: 4vh solid #008EA1; }
+  100% {
+    border-bottom: 4vh solid #161D23; } }
+  #intro h1 {
+    font-size: 5em;
+    color: #161D23;
+    font-family: "Sansita Swashed", cursive; }
+  #intro p {
+    font-size: 20px;
+    color: #161D23; }
+  #intro .btn {
+    background-color: #008EA1;
+    color: #fff; }
+    #intro .btn:hover {
+      background-color: #161D23; }
+  #intro hr {
+    border: 2px solid #161D23; }
+
+#about-me {
+  font-family: "Tajawal", sans-serif; }
+  #about-me .row:nth-child(1) h2 {
+    text-align: center;
+    font-family: "Sansita Swashed", cursive; }
+  #about-me .row:nth-child(1) p {
+    text-align: center; }
+
+#my-services {
+  font-family: "Sansita Swashed", cursive; }
+  #my-services .project,
+  #my-services .coffee,
+  #my-services .customer {
+    font-size: 3em !important;
+    animation: anim 10s infinite; }
+@keyframes anim {
+  0% {
+    color: #fff; }
+  100% {
+    color: #000; } }
+#band {
+  height: auto;
+  background-color: #008EA1;
+  animation: move2 10s infinite; }
+@keyframes move2 {
+  0% {
+    background-color: #161D23; }
+  25% {
+    background-color: #008EA1; }
+  50% {
+    background-color: #161D23; }
+  75% {
+    background-color: #008EA1; }
+  100% {
+    background-color: #161D23; } }
+  #band .box {
+    height: 300px;
+    width: auto;
+    background-color: #fff;
+    margin: 5px 5px 5px 5px; }
+
+#contact .box:nth-child(2) {
+  background-size: cover;
+  height: auto;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.3) 0%, rgba(28, 39, 51, 0.3) 100%), url("https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=334&q=80"); }
+#contact form h2 {
+  font-family: "Sansita Swashed", cursive; }
+
+#copyright {
+  background-color: #161D23; }
+  #copyright a {
+    margin-left: 10px; }
+
+/*# sourceMappingURL=style.css.map */
